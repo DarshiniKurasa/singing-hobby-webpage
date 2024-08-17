@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <style>
+        body{
+            background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+        }
+        .change-th{
+            background-color: black;
+            color: white;
+            padding: 12px;
+            border-radius: 6px;
+            border-color: plum;
+        }
+        .change-th:hover{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+       
+        h1,h2{
+            text-align: center;
+        }
+        .container{
+            
+            background-color: white;
+            max-width: 600px;
+             padding: 20px;
+             margin: 20px auto;
+             border-radius: 10px;
+        }
+        img{
+            width: 100%;
+           
+        }
+        .intro-pcture{
+            border-radius: 10px;
+            transition: all 150ms ease-in-out;
+        }
+        .intro-pcture:hover{
+            filter:contrast(75%);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap:10px;
+            margin: 10px 0;
+        }
+        .grid img{
+            width: 100%;
+            height: 90px;
+            border-radius: 8px;
+            transition: all 150ms all ease-in-out;
+        }
+        .grid img:hover{
+            transform: scale(2);
+        }
+        .matter{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+        .dark {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    color: white;
+        }
+        .dark .container{
+            background: rgba(255,255,255,0.1);
+        }
+        .dark a{
+            color: plum;
+        }
+        .dark .change-th:hover{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+        .dark .change-th{
+            background-color: white;
+            color: black;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid black;
+            border-color: plum;
+        }
+
+    </style>
+</head>
+<body >
+    <button class="change-th" style="display:block;margin: 0 auto;padding: 15px;">
+        Change Theme
+    </button>
+    <div class="container">
+            <h1>
+                ---Singing---
+            </h1>
+            <h2>
+                My Favourite Hobby
+            </h2>
+            <a href="https://en.wikipedia.org/wiki/Singing" target="_blank">
+                <img  class="intro-pcture" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/697/original/hobby1.jpg?1723884985"
+                    alt="">
+            </a>
+
+            <div class="grid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/699/original/hobby4.jpeg?1723885317"
+                alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/700/original/hobby3.jpg?1723885327"
+                alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/701/original/hobby5.jpeg?1723885376"
+                alt="">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/702/original/hobby.jpeg?1723885389"
+                alt="">
+            </div>
+            <p class="matter">
+                Singing is the act of creating musical sounds with the voice. A person whose profession is singing is called a
+                singer,
+                artist or vocalist. Singers perform music that can be sung with or without accompaniment by musical instruments.
+                Singing
+                is often done in an ensemble of musicians, such as a choir. Singers may perform as soloists or accompanied by
+                anything
+                from a single instrument up to a symphony orchestra or big band. Different singing styles include art music such as
+                opera and Chinese opera, Indian music, Greek music, Japanese music, and religious music styles such as gospel,
+                traditional music styles, world music, jazz, blues, ghazal, and popular music styles such as pop, rock, and
+                electronic
+                dance music.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/Singing" target=""> 📖Read on wikipedia </a>
+            
+
+            
+    </div>
+
+    <footer style="text-align: center; font-size: 18px;">
+        Coded with ❤️ by <a href="https://www.linkedin.com/in/darshini-kurasa-303a96292/">Abhi Priya darshini Kurasa</a> 
+    </footer>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            body.classList.toggle("dark");
+        }
+        let but = document.querySelector(".change-th");
+        but.addEventListener("click", changeTheme);
+    </script>
+</body>
+</html>
